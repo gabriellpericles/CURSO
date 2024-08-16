@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html.ico.png" type="image/ x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem DInâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" 
+         type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png"
+         type="image/png">
+         <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midias/audio-zap.mp3.ogg" controls autoplay></audio>
+
+<p>-----------------------------------------------------------------</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midias/audio-zap.mp3.ogg" type="audio/ogg">
+    </audio>
+    <!--ESSE É BOM PQ VOCÊ PODE BOTAR OS TIPOS QUE O SITE VAI TESTANDO QUAL DÁ CERTO NO SEU NAVEGADOR-->
+    <!--MP3 WAV OGG-->
+
+    <ol>
+        <ul type="disc">
+            <p>Caso não consiga adicionar audio no site, melhor baixar</p>
+                        <li>
+                            <a href="midias/audio-zap.mp3.ogg">
+                                Clique aqui para
+                                baixar
+                            </a>
+                        </li>
+        </ul>
+    </ol>
+</body>
+</html>

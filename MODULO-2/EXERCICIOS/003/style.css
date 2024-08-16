@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+}
+h1{
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+}
+
+h2,p{
+    color: aliceblue;
+}
+#botao-pag, #botao-voltar{
+    color: brown;
+    
+}

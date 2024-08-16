@@ -1,0 +1,59 @@
+<!DOCTYPE html>    <!--
+                    # = id
+                    . = class
+                    : = pseudo-class
+                    :: = pseudo-elemento
+                    > = filho de uma tag
+                   -->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        
+        a{
+            color: darkred;
+            text-decoration: none; /*Aqui eu tiro o sublinnhado*/
+            font-weight: bold; /*Aqui eu deixo mais negrito*/
+        }
+
+        a:visited{ /*Sites visitados*/
+            color: red;
+        }
+
+        a:hover{ /*é pra quando passar mouse encima*/
+            text-decoration: underline; /*aqui eu coloco o sublinhado passando o mouse encima */
+            color: black;
+        }
+
+        a:active{ /*Aqui funciona quando vc clica em algo*/
+            color: rgba(25, 0, 138, 0.719);
+        }
+        .especial::before{
+            content: ' [link]';
+            color: darkred;
+            font-weight: normal;
+        }
+
+        .especial::after{ /*Aqui eu digo que depois de todos os links*/
+            content: ' [link]';
+            color: darkred;
+            font-weight: normal;
+        }
+        .especial{
+            background-color: rgba(252, 0, 0, 0.452);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando listas</h1>
+    <li><a href="https://gustavoguanabara.github.io" target="_self">Repositório GitHub</a></li>
+    <li><a href="https://youtube.com/cursoemvideo/" target="_self" class="especial">Canal de YouTube</a></li>
+
+</body>
+</html>
