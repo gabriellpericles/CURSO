@@ -14,9 +14,6 @@
             padding: 10px;
 
         }
-        div{
-            background-color: grey;
-        }
         #conteudo{
             background: yellow url('imagens/target001.png') center center/cover;
             
@@ -28,8 +25,24 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-
-
+        }
+        #q1{
+            background: grey url('imagens/target001.png') center center/ cover;
+            height: 100px;
+            width: 200px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #q2{
+            background: white url('imagens/target001.png') center center/cover;
+            height: 50px;
+            width: 100px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
@@ -37,7 +50,9 @@
 <body>
     <section id="container">  <!-- quando vou usar algo na vertical preciso de um contaner -->
         <article id="conteudo">
-          <div></div>
+          <div id="q1">
+            <div id="q2"></div>
+          </div>
         </article>
 
     </section>
