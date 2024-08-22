@@ -12,9 +12,19 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+        h1{
+            font-variant: small-caps;
+        }
+        caption{
+            font-size: 1.2em;
+            background-color: rgb(0, 0, 0);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.623);
+            color: white;
+        }
         table{
             width: 400px;
             border-collapse: collapse;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
         }
         td, th{
             border: 1px solid black;
@@ -36,23 +46,24 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!-- Anatomia para tabelas grandes -->
-    <!-- THEAD = PARTE DE CIMA
+    <!--TABLE
+      CAPTION = LEGENDA DA TABELA
 
+         THEAD = PARTE DE CIMA
              TR, TD, TH
 
          TBODY = CORPO
-
              TR, TD, TH
 
          TFOOT= RODA PÉ
-
              TR, TD, TH
          -->
     <table>
+         <caption><strong>População Federativas</strong></caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -71,7 +82,7 @@
         </tbody>
         <tfoot>
              <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="thead"><strong>65.000.000</strong></td>
              </tr>
         </tfoot>
