@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 2</title>
+    <style>
+        *{
+            padding: 10px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th, .thead{
+            background-color: rgba(128, 128, 128, 0.527);
+            color: white;
+        }
+        .thead{
+            text-align: center;
+        }
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- Anatomia para tabelas grandes -->
+    <!-- THEAD = PARTE DE CIMA
+
+             TR, TD, TH
+
+         TBODY = CORPO
+
+             TR, TD, TH
+
+         TFOOT= RODA PÉ
+
+             TR, TD, TH
+         -->
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.000.000</td>
+             </tr>
+             <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">11.000.000</td>
+             </tr>
+        </tbody>
+        <tfoot>
+             <tr>
+                <th>Total de habitantes</th>
+                <td class="thead"><strong>65.000.000</strong></td>
+             </tr>
+        </tfoot>
+    </table>   
+</body>
+
+</html>
