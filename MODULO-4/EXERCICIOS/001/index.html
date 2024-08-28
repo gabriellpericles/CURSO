@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de Iframe</title>
     <style>
+        body {
+            background-color: rgba(169, 169, 169, 0.233);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         iframe {
-            width: 25%;
-            height: 200px;
+            width: 50%;
+            height: 300px;
             border: 2px solid black;
             display: block;
             margin: auto;
+            background-color: white;
 
         }
 
@@ -20,8 +26,13 @@
             padding: 10px;
         }
 
-        h1 {
+        h1,h2 {
             text-align: center;
+            margin: 10px;
+
+            background: linear-gradient(#000046, #1cb5e0);
+            background-clip: text;
+            color: transparent;
         }
     </style>
 </head>
@@ -45,8 +56,8 @@
 
     <ul>
         <li><a href='file:///C:/Users/peric/OneDrive/Documentos/HTML-CSS/ESTUDOS/FLEX-GRID/002/index.html' target='frame'>pag1</a></li>
-        <li><a href='file:///C:/Users/peric/OneDrive/Documentos/HTML-CSS/ESTUDOS/FLEX-GRID/001/index.html' target='frame'>pag2</a></li>
-        <li><a href='file:///C:/Users/peric/OneDrive/Documentos/projetinho/index.html' target='frame'>pag3</a></li>
+        <li><a href='file:///C:/Users/peric/OneDrive/Documentos/HTML-CSS/ESTUDOS/testes/index3.html' target='frame'>pag2</a></li>
+        <li><a href='file:///C:/Users/peric/OneDrive/Documentos/HTML-CSS/ESTUDOS/testes/index.html' target='frame'>pag3</a></li>
     </ul>
     
     
@@ -60,6 +71,25 @@
     <iframe id="q2" src="file:///C:/Users/peric/OneDrive/Documentos/HTML-CSS/CURSO/MODULO-4/EXERCICIOS/001/index2.html"
         frameborder="0" sandbox="allow-forms allow-scripts allow-same-origin" referrerpolicy="no-referrer"></iframe>
 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, a tenetur ad dignissimos ab similique accusamus
+        consequatur. Accusamus magni maxime expedita sit consectetur culpa dicta eius tenetur et. Enim, laudantium?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, a tenetur ad dignissimos ab similique accusamus
+        consequatur. Accusamus magni maxime expedita sit consectetur culpa dicta eius tenetur et. Enim, laudantium?</p>
+
+    <h1>Conteudos de Iframes</h1>
+    <h2>Video</h2>
+    <div style="padding:30.25% 0 0 0;position:relative;margin: 50px">
+        <iframe src="https://player.vimeo.com/video/265045525?h=217b87fac0&title=0&byline=0"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+    <h2>Maps</h2>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15918.86371199765!2d-39.958842271958!3d-4.078165684328486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bfe18650b2b4ef%3A0x9d61c6fee7991bde!2sSerrote%20Exu%20-%20Taperuaba%2C%20Sobral%20-%20CE!5e0!3m2!1spt-BR!2sbr!4v1724859861720!5m2!1spt-BR!2sbr"
+        width="600" height="550" style="border: 1px solid black;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, a tenetur ad dignissimos ab similique accusamus
         consequatur. Accusamus magni maxime expedita sit consectetur culpa dicta eius tenetur et. Enim, laudantium?</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, a tenetur ad dignissimos ab similique accusamus
