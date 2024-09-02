@@ -7,21 +7,46 @@
 </head>
 <body>
     <h1>Teste</h1>
-    <form action="" method="get">
-        <section>
-            <label for="iusu">usuário</label>
-            <input type="text" name="usu" id="iusu" required minlength="5" size="5">
-        </section>
+    <p>
+        <form action="" method="get">
+            <section>
+                <label for="iusu">usuário</label>
+                <input type="text" name="usu" id="iusu" required minlength="5" size="5">
+            </section>
+            <section>
+                <label for="isen">Senha</label>
+                <input type="password" name="sen" id="isen" required minlength="5" maxlength="6" size="10" placeholder="mínimo 5 digítos">
+            </section>
+            <section>
+                <input type="submit" value="eviar">
+                <input type="reset" value="limpar">
+            </section>
+        </form>
+    </p>
 
-        <section>
-            <label for="isen">Senha</label>
-            <input type="password" name="sen" id="isen" required minlength="5" maxlength="6" size="10" placeholder="mínimo 5 digítos">
-        </section>
-
-        <section>
-            <input type="submit" value="eviar">
-            <input type="reset" value="limpar">
-        </section>
-    </form>
+    <p>
+        <form action="">
+            <p>
+                <div>
+                    <label for="iname">Nome</label>
+                    <input type="text" name="" id="iname">
+                </div>
+            </p>
+            <p>
+                <div>
+                    <label for="inumero">média</label>
+                    <input type="number" name="" id="inumero" min="0" max="10" placeholder="0 a 10" step="0.1">
+                </div>
+            </p>
+            <label for="imes">Periodo letivo</label>
+            <input type="month" name="" id="imes" value="2024-09">
+            <p>
+                <div>
+                    <input type="submit" value="enviar">
+                    <input type="reset" value="limpar">
+                </div>
+            </p>
+        </form>
+    </p>
 </body>
 </html>
