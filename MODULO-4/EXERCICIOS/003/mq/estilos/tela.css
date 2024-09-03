@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+}
+header{
+    width: 100vw;
+    background-color: darkgray;
+}
+menu ul{
+    list-style: none;
+    background-color: grey;
+}
+menu li{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(58, 57, 57);
+    color: white;
+}
