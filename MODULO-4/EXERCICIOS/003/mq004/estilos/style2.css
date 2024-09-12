@@ -1,1 +1,51 @@
 /* todas as demais midias */
+
+/* typical device breakpoints*/
+
+
+/*
+
+celular: 320px ate 768px
+tablet: 768px 992px
+Desktop: 992px ate 2560px
+tv: 2560px+
+
+*/
+
+
+@media print{
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background: url('../imgs/back-tablet.jpg')left center/cover no-repeat;
+    }
+    #celular{
+        display: none;
+    }
+    #tablet{
+        display: block;
+    }
+}
+@media screen and (min-width: 993px) and (max-width: 1440px){
+    body{
+        background: url('../imgs/back-pc.jpg') center center/ cover no-repeat;
+    }
+    #celular{
+        display: none;
+    }
+    #pc{
+        display: block;
+    }
+}
+@media screen and (min-width: 1441px) and (max-width: 2560px){
+    body{
+        background: url('../imgs/back-tv.jpg') center center/ cover no-repeat;
+    }
+    #celular, #pc{
+        display: none;
+    }
+    #tv{
+        display: block;
+    }
+}

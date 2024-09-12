@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background: url('../imgs/back-phone.jpg') center center/ cover no-repeat;
+    background: url('../imgs/back-phone.jpg') center bottom/ cover no-repeat;
     display: flex;
     justify-content: center;
 }

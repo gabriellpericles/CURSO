@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-color: blue;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 0 auto 15px auto;
+}
+
+ul {
+    background-color: rgb(131, 131, 131);
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+
+}
+
+li {
+    border-top: 2px solid;
+    width: 100vw;
+    padding: 5px;
+    text-align: center;
+}
+
+main {
+    width: 90vw;
+    text-align: justify;
+    margin: auto;
+}
+
+article {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #a6a6a628;
+    border-radius: 10px;
+    box-shadow: 0 0 36px 1px #000000a4;
+    backdrop-filter: blur(5px);
+}
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 26px;
+    height: 2px;
+    border-radius: 2px;
+    margin: 3px  auto;
+    background-color: white;
+    transition: all .3s;
+}
+
+@media screen and (max-width: 600px){
+    .hamburguer{
+        display: block;
+    }
+    .hamburguer:hover{
+       margin-bottom: 250px;
+       transition: all 2s;
+    }
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: palevioletred;
+
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transition: all 0.3s;
+    }
+    .menu.active{
+        left: 0;
+    }
+}
