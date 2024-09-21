@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+</head>
+<style>
+    .container{
+        background: lightcoral;
+        display: flex;
+        flex-flow: row wrap;
+        height: 200px;
+        align-items: flex-start;
+    }
+    .itens{
+        background-color: lightblue;
+        border: 1px solid;
+        text-align: center;
+        align-self: auto;
+        flex-basis: 50px;
+    }
+    .itens:nth-child(4){
+        order: -3;
+        align-self: flex-end;
+    }
+    .itens:nth-child(1){
+        align-self: center;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="itens">A</div>
+        <div class="itens">B</div>
+        <div class="itens">C</div>
+        <div class="itens">D</div>
+        <div class="itens">E</div>
+        <div class="itens">F</div>
+        <div class="itens">G</div>
+    </div>
+</body>
+</html>
